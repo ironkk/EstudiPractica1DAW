@@ -1,7 +1,8 @@
 function Concesionario() {
-    this.nombre = nombre;
+    //declaro atributos sin valor por defecto
+    this.nombre;
     this.comanda = [];
-    this.direccion = direccion;
+    this.direccion;
 
 //set direccion
 
@@ -16,7 +17,8 @@ function Concesionario() {
     };
 // funcion add comanda
     this.addComanda = function (com) {
-        this.push = com;
+        this.comanda.push = com;
+        return this.comanda.length;
     };
 
 
@@ -81,8 +83,6 @@ document.write(myConcesionario.comanda[posicionComanda - 1].nombre);
 document.write('<br /> Nombre extra: ');
 document.write(myConcesionario.comanda[posicionComanda - 1].extras[numExtra - 1]);
 
-
-
-
-
-
+//creamos otro coche
+var coche2 = new Coche();
+coche2.nombre = "Fantastico2";
